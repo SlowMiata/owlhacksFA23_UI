@@ -1,71 +1,35 @@
-/*#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}*/
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.app-header{
-  top:0;
-  left: 0;
-  background-color:darkcyan;
-  display: inline-block;
-  margin-right: 2rem;
-  padding: 16px;
+.accountContainer{
   
 }
-.line-up{
-  display: inline-block;
+.account-header{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+.return-to-feed {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.account-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.img{
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
 
 .post{
   border: darkcyan solid 2px;
@@ -80,21 +44,87 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  max-height: 50vw;
+  max-width: 50vh;
 }
 .like-button{
   height: 2rem;
   width: 2rem;
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .navbar{
-  display: block;
+  display: flex;
+  justify-content: space-between;
   background-color: darkcyan;
+  align-items: center ;
 }
+
 .nav-button{
-  display: block;
-  width: 80%;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 2rem;
+}
+
+.pfp-icon{
   height: 2rem;
   width: 2rem;
-  margin-left: 2rem;
 }
+
+.post-button{
+  position: fixed;
+  background-color: lightseagreen;
+  top: 85vh;
+  left: 40vw;
+  border-radius: 90px;
+  border: darkcyan solid 2px;
+  width: 20%;
+  z-index: 0;
+}
+
+.post-button:hover{
+  background-color: darkcyan;
+}
+
+.outer-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.425) ;
+  overflow: hidden;
+  align-content: center;
+  z-index: 2;
+}
+
+.inner-modal{
+  position: fixed;
+  top:25vh;
+  left:25vw;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(121, 212, 207);
+  box-shadow: 0px 10px rgb(92, 146, 146);
+  align-content: center;
+  border: solid rgb(92, 146, 146) 2px;
+  border-radius: 15px;
+}
+
+.modal-content{
+  position: relative;
+  color: white;
+  text-align: center;
+  background-color: cadetblue;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border: solid rgb(92, 146, 146) 2px;
+  border-radius: 15px;
+}
+
+.modal-items{
+  margin: 1rem;}
