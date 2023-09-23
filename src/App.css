@@ -1,8 +1,4 @@
-
-
-
 .accountContainer{
-
   
 }
 .account-header{
@@ -11,9 +7,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
-
-  
 }
 
 .return-to-feed {
@@ -23,14 +16,6 @@
   transform: translateY(-50%);
 
 }
-.return-to-feed-invisible{
-  background-color: transparent;
-  color: transparent;
-}
-
-
-
-
 
 .account-info{
   display: flex;
@@ -45,3 +30,101 @@
   height: 70px;
   border-radius: 30px;
 }
+
+.post{
+  border: darkcyan solid 2px;
+  padding: .5rem;
+  text-align: left;
+  height: auto;
+  border-radius: 5px;
+  margin: .25rem;
+}
+.post-uploaded-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-height: 50vw;
+  max-width: 50vh;
+}
+.like-button{
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkcyan;
+  align-items: center ;
+}
+
+.nav-button{
+  width: fit-content;
+  height: fit-content;
+  margin-right: 2rem;
+}
+
+.pfp-icon{
+  height: 2rem;
+  width: 2rem;
+}
+
+.post-button{
+  position: fixed;
+  background-color: lightseagreen;
+  top: 85vh;
+  left: 40vw;
+  border-radius: 90px;
+  border: darkcyan solid 2px;
+  width: 20%;
+  z-index: 0;
+}
+
+.post-button:hover{
+  background-color: darkcyan;
+}
+
+.outer-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.425) ;
+  overflow: hidden;
+  align-content: center;
+  z-index: 2;
+}
+
+.inner-modal{
+  position: fixed;
+  top:25vh;
+  left:25vw;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(121, 212, 207);
+  box-shadow: 0px 10px rgb(92, 146, 146);
+  align-content: center;
+  border: solid rgb(92, 146, 146) 2px;
+  border-radius: 15px;
+}
+
+.modal-content{
+  position: relative;
+  color: white;
+  text-align: center;
+  background-color: cadetblue;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border: solid rgb(92, 146, 146) 2px;
+  border-radius: 15px;
+}
+
+.modal-items{
+  margin: 1rem;}

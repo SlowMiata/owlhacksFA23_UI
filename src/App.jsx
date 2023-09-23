@@ -5,9 +5,14 @@ import AccountUsername from './components/Username'
 import AccountPicture from './components/AccountPicture'
 import AccountStats from './components/AccountStats'
 import AccountEmail from './components/AccountEmail'
+import PostCard from './components/PostCard'
+import AddPostButton from './components/AddPostButton'
+import './index.css'
+import CreatePostModal from './components/CreatePostModal'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [modal, setmodal] = useState(false)
+
 
   return (
     <div className = "accountContainer">
