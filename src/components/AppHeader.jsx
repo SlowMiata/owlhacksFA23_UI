@@ -8,11 +8,10 @@ function AppHeader() {
       <>
         <div className='navbar'>
           <h1 className='line-up'>PotHole Findr</h1>
-          <button type='button' className='nav-button' onClick={() => {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }}>
-            <img src={userimg} className='like-button'></img>
-          </button>
+            <button type='submit' className='nav-button'>
+            <img src={userimg} className='pfp-icon' border="0"/>
+          </button> 
+          
         </div>
       </>
     )
