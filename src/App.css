@@ -1,9 +1,9 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+}*/
 
 .logo {
   height: 6em;
@@ -42,7 +42,6 @@
 }
 
 .app-header{
-  position: fixed;
   top:0;
   left: 0;
   background-color:darkcyan;
@@ -65,38 +64,37 @@
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  right:0;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.post{
+  border: darkcyan solid 2px;
+  padding: .5rem;
+  text-align: left;
+  height: auto;
+  border-radius: 5px;
+  margin: .25rem;
+}
+.post-uploaded-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.like-button{
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+.navbar{
+  display: block;
+  background-color: darkcyan;
+}
+.nav-button{
+  display: block;
+  width: 80%;
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+}
