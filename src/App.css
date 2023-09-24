@@ -1,6 +1,6 @@
-.accountContainer{
-  
-}
+
+
+/* account page */
 .account-header{
   
   display: flex;
@@ -131,6 +131,7 @@
 }
 
 
+/* login page */
 .LoginHeader{
   display: flex;
   flex-direction: column;
@@ -165,9 +166,7 @@
   background-color: aliceblue;
   border-radius: 5px;
   
-
 }
-
 
 .LoginHeader .inputs img{
   width:30px;
