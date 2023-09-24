@@ -11,7 +11,6 @@ import './index.css'
 import CreatePostModal from './components/CreatePostModal'
 import AppHeader from './components/AppHeader'
 
-
 function App() {
   const [modal, setmodal] = useState(false)
 
@@ -19,9 +18,12 @@ function App() {
   return (
     
     <div className = "accountContainer">
-      <AppHeader/>
-        <AccountHeader/>
 
+      <AppHeader/>
+      <AccountHeader/>
+
+        <AppHeader/>
+        <AccountHeader/>
       <div className='account-info'>
           <div className = "username">
             <AccountUsername user = {"Name"}/>
@@ -36,8 +38,6 @@ function App() {
           <div className='counter'>
             <AccountStats count = {23} />
           </div>
-
-
           
         </div>
 
