@@ -127,4 +127,55 @@
 }
 
 .modal-items{
-  margin: 1rem;}
+  margin: 1rem;
+}
+
+
+.LoginHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+
+}
+
+.header{
+  font-size: 40px;
+}
+
+.LoginHeader .inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+.LoginHeader .inputs .input{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px;
+  
+
+}
+
+
+
+.LoginHeader .inputs img{
+  width:20px;
+}
+.forgot-password{
+  text-align: center;
+}
+.submit-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
