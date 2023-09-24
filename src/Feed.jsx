@@ -15,7 +15,7 @@ function Feed() {
     <AppHeader/>
     <PostCard/>
     <PostCard/>
-    {modal && <CreatePostModal/>}
+    {modal && <CreatePostModal modalset={setmodal}/>}
     <AddPostButton modalset={setmodal} modal={modal}/>
     </>
 }

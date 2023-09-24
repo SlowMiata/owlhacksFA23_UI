@@ -1,5 +1,4 @@
 import React from 'react'
-import RemoveModal from './RemoveModal';
 import { useState } from 'react'
 
 
