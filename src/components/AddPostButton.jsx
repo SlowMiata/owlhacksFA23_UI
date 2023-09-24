@@ -7,7 +7,7 @@ function AddPostButton(props){
 
   return (
     <div>
-        <button type='submit' className='post-button' onClick={() => modalset(!modal)}><h2>+Post</h2></button>
+        <button type='submit' className='post-button' onClick={() => modalset(true)}><h2>+Post</h2></button>
     </div>
   )
 }

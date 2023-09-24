@@ -1,13 +1,18 @@
 import React from 'react'
+import RemoveModal from './RemoveModal';
+import { useState } from 'react'
 
-function CreatePostModal(props) {
-    const {modal, modalset} = props;
+
+function CreatePostModal({modalset, modal}) {
+    const handleBtnClick = () =>{
+        modalset(false);
+    }
 
 
   return (
     <div className='outer-modal'>
         <div className='inner-modal'>
-            <button type="submit" className='modal-items' onClick={() => modalset(false)}>X</button>
+        <button onClick={handleBtnClick}>Close Modal</button>
             <div className='modal-content'>
                 <form action="/action_page.php">
                     <input type="text" placeholder='Post Title' className='modal-items' /><br/>
