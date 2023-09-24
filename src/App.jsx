@@ -16,7 +16,11 @@ function App() {
 
 
   return (
+    
     <div className = "accountContainer">
+
+      <AppHeader/>
+      <AccountHeader/>
 
         <AppHeader/>
         <AccountHeader/>
