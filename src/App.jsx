@@ -19,8 +19,6 @@ function App() {
     
     <div className = "accountContainer">
 
-      <AppHeader/>
-      <AccountHeader/>
 
         <AppHeader/>
         <AccountHeader/>
