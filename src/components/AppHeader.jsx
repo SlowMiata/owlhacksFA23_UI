@@ -27,7 +27,7 @@ window.onclick = function(event) {
 
 function AppHeader() {
     return(
-      <>
+      <nav>
         <div className='navbar'>
           <h1 className='line-up'>PotHole Findr</h1>
             <button type='submit' className='nav-button'>
@@ -42,7 +42,7 @@ function AppHeader() {
             </div>
           </div>
         </div>
-      </>
+      </nav>
     )
   }
 

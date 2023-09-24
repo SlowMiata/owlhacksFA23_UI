@@ -24,15 +24,21 @@ function Feed() {
 
     return<>
     <AppHeader/>
-    {posts.map((post, i) => {
-        return <PostCard 
-        key={i}
-        title={post.title}
-        notes={post.notes}
-        location={post.location}
-        src={post.base64}
-        />
-    })}
+    <div className='feed' style={{
+        width: "800px",
+        margin: "4rem auto",
+
+    }}>
+        {posts.map((post, i) => {
+            return <PostCard 
+            key={i}
+            title={post.title}
+            notes={post.notes}
+            location={post.location}
+            src={post.base64}
+            />
+        })}
+    </div>
     {modal && <CreatePostModal modalset={setmodal}/>}
     <AddPostButton modalset={setmodal} modal={modal}/>
     </>

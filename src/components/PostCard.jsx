@@ -5,7 +5,10 @@ import comment from '../assets/comment.png'
 
 function PostCard({ title, notes, location, src }){
   return (
-    <div className="post">
+    <div className="post" style={{
+		paddingRight: "4rem",
+		paddingLeft: "4rem",
+	}}>
       <h1>{title}</h1>
 			<p>{notes}</p>
 			<h3>{location}</h3>

@@ -54,11 +54,16 @@
   margin-top: 1rem;
 }
 
+nav {
+  background-color: darkcyan;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
   background-color: darkcyan;
   align-items: center ;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .nav-button{
@@ -128,6 +133,8 @@
 
 .modal-items{
   margin: 1rem;
+  border: none;
+  padding: 0.5rem;
 }
 
 
